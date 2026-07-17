@@ -36,3 +36,29 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #6110B1; /* Elegant gold accent when scrolling */
 }
+
+@keyframes logoFloat {
+
+    0%{
+        transform:scale(.9) rotate(0deg);
+        opacity:0;
+    }
+
+    40%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    70%{
+        transform:scale(1.06);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+.animate-logo{
+    animation:logoFloat .9s ease forwards;
+}
