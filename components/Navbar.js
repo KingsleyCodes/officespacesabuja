@@ -7,23 +7,25 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Premium glass navbar with elegant transparency */}
-      <nav className="sticky top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl px-6 lg:px-16 py-2 border-b border-white/20 shadow-[0_1px_0_0_rgba(0,0,0,0.05)] transition-all duration-300">
+      {/* Premium glass navbar with elegant transparency and refined mobile padding */}
+      <nav className="sticky top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-xl px-4 sm:px-6 lg:px-16 py-2 border-b border-white/20 shadow-[0_1px_0_0_rgba(0,0,0,0.05)] transition-all duration-300">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
-          {/* Left Side Group: Logo with refined spacing */}
-          <div className="flex items-center space-x-8">
-            <Link href="/" className="block relative h-20 w-auto max-w-[180px] group focus:outline-none">
+          {/* Left Side Group: Perfectly aligned, responsive logo */}
+          <div className="flex items-center space-x-4 sm:space-x-8">
+            <Link 
+              href="/" 
+              className="block relative h-12 md:h-14 w-auto focus:outline-none transition-all duration-300"
+            >
               <img
                 src="/logo.png"
                 alt="Office Spaces Abuja — Premium Executive Workspaces"
-                className="h-full w-auto object-contain transition-opacity duration-300 group-hover:opacity-85"
-                style={{ minWidth: '140px' }}
+                className="h-full w-auto object-contain transition-opacity duration-300 hover:opacity-85"
               />
             </Link>
 
             {/* Refined architectural separator with brand purple */}
-            <div className="hidden sm:block h-10 w-[1px] bg-gradient-to-b from-transparent via-[#6D28D9]/40 to-transparent" />
+            <div className="hidden sm:block h-8 w-[1px] bg-gradient-to-b from-transparent via-[#6D28D9]/40 to-transparent" />
 
             <span className="hidden sm:inline text-[10px] uppercase tracking-[0.35em] text-[#52525B] font-light">
               Kubwa · Abuja
